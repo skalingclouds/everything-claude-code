@@ -1,0 +1,692 @@
+# Instincts generated from https://github.com/skalingclouds/everything-claude-code
+# Generated: 2026-03-06T08:17:14.368Z
+# Version: 2.0
+
+---
+id: everything-claude-code-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Commit Length
+
+## Action
+
+Write moderate-length commit messages (~50 characters)
+
+## Evidence
+
+- Average commit message length: 69 chars
+- Based on 200 commits
+
+---
+id: everything-claude-code-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: everything-claude-code-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: everything-claude-code-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: everything-claude-code-test-framework
+trigger: "when writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Test Framework
+
+## Action
+
+Use unknown as the test framework
+
+## Evidence
+
+- Test framework detected: unknown
+- File pattern: *.test.js
+
+---
+id: everything-claude-code-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.js
+
+## Evidence
+
+- File pattern: *.test.js
+- Consistent across test files
+
+---
+id: everything-claude-code-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Test Types
+
+## Action
+
+Write unit, integration tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, integration
+- Coverage config: yes
+
+---
+id: everything-claude-code-workflow-database-migration
+trigger: "when modifying the database schema or adding tables"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Database Migration
+
+## Action
+
+Follow the database-migration workflow:
+1. Create migration file
+2. Update schema definitions
+3. Generate/update types
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: migrations/*
+
+---
+id: everything-claude-code-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~14x per month
+- Files: .opencode/*, .opencode/plugins/*, .opencode/tools/*
+
+---
+id: everything-claude-code-workflow-test-driven-development
+trigger: "when adding new functionality"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Test Driven Development
+
+## Action
+
+Follow the test-driven-development workflow:
+1. Write failing test
+2. Implement code to pass test
+3. Refactor if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: **/*.test.*, **/*.spec.*, src/**/*
+
+---
+id: everything-claude-code-workflow-version-release
+trigger: "when doing version release"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Version Release
+
+## Action
+
+Follow the version-release workflow:
+1. Update version in package.json, plugin manifests, and package-lock.json
+2. Update README.md with new features/changes
+3. Update CHANGELOG.md with release notes
+4. Create release-specific documentation in docs/releases/
+5. Update marketplace.json and plugin.json configurations
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: package.json, package-lock.json, .claude-plugin/marketplace.json
+
+---
+id: everything-claude-code-workflow-cross-platform-harness-sync
+trigger: "when doing cross platform harness sync"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Cross Platform Harness Sync
+
+## Action
+
+Follow the cross-platform-harness-sync workflow:
+1. Update core files in root directory
+2. Sync to .cursor/ directory with platform-specific adaptations
+3. Sync to .opencode/ directory with OpenCode-specific tools
+4. Sync to .codex/ and .agents/ directories
+5. Update platform-specific configuration files
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: agents/*.md, commands/*.md, skills/*.md
+
+---
+id: everything-claude-code-workflow-multi-language-documentation
+trigger: "when doing multi language documentation"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Multi Language Documentation
+
+## Action
+
+Follow the multi-language-documentation workflow:
+1. Update English documentation in root
+2. Update Chinese Simplified in docs/zh-CN/
+3. Update Chinese Traditional in docs/zh-TW/
+4. Update Japanese in docs/ja-JP/
+5. Ensure consistency across all language variants
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: *.md, docs/zh-CN/**/*.md, docs/zh-TW/**/*.md
+
+---
+id: everything-claude-code-workflow-hook-system-enhancement
+trigger: "when doing hook system enhancement"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Hook System Enhancement
+
+## Action
+
+Follow the hook-system-enhancement workflow:
+1. Update hooks/hooks.json configuration
+2. Add or modify hook scripts in scripts/hooks/
+3. Update corresponding .cursor/hooks/ files
+4. Add or update hook tests in tests/hooks/ and tests/integration/
+5. Update hook documentation in hooks/README.md
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: hooks/hooks.json, scripts/hooks/*.js, .cursor/hooks/*.js
+
+---
+id: everything-claude-code-workflow-skill-addition
+trigger: "when doing skill addition"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Skill Addition
+
+## Action
+
+Follow the skill-addition workflow:
+1. Create main skill in skills/*/SKILL.md
+2. Add skill to README.md directory listing
+3. Sync skill to .cursor/skills/
+4. Add skill metadata to .agents/skills/ with openai.yaml
+5. Update configure-ecc skill with new skill reference
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~5x per month
+- Files: skills/*/SKILL.md, README.md, .cursor/skills/*/SKILL.md
+
+---
+id: everything-claude-code-workflow-test-maintenance
+trigger: "when doing test maintenance"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Workflow Test Maintenance
+
+## Action
+
+Follow the test-maintenance workflow:
+1. Fix test files in tests/ directory
+2. Update hook tests in tests/hooks/
+3. Update integration tests in tests/integration/
+4. Update test runner configuration
+5. Ensure all tests pass
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: tests/**/*.test.js, tests/hooks/hooks.test.js, tests/integration/hooks.test.js
+
+---
+id: everything-claude-code-conventional-commits
+trigger: "When writing commit messages"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Conventional Commits
+
+## Action
+
+Use conventional commit format with type prefix (feat, fix, docs, test, chore) followed by colon and description
+
+## Evidence
+
+- All commits follow pattern like 'docs: add upstream tracking flag to push example (#327)'
+- Examples show consistent feat:, fix:, docs:, chore: prefixes
+
+---
+id: everything-claude-code-camel-case-files
+trigger: "When creating new JavaScript/TypeScript files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Camel Case Files
+
+## Action
+
+Use camelCase naming for files
+
+## Evidence
+
+- File naming convention detected as camelCase
+- Config files show .opencode/package.json, .opencode/tsconfig.json patterns
+
+---
+id: everything-claude-code-pascal-case-classes
+trigger: "When defining class names"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Pascal Case Classes
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Naming conventions analysis shows PascalCase for classes
+- Standard JavaScript convention observed
+
+---
+id: everything-claude-code-screaming-snake-constants
+trigger: "When defining constants"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constants
+
+## Evidence
+
+- Naming conventions show SCREAMING_SNAKE_CASE for constants
+- Consistent pattern in codebase
+
+---
+id: everything-claude-code-test-file-pattern
+trigger: "When creating test files"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Test File Pattern
+
+## Action
+
+Name test files with *.test.js pattern
+
+## Evidence
+
+- Test pattern shows *.test.js format
+- Examples in tests/hooks/*.test.js and tests/integration/*.test.js
+
+---
+id: everything-claude-code-separate-test-location
+trigger: "When organizing test files"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Separate Test Location
+
+## Action
+
+Place tests in separate tests/ directory structure
+
+## Evidence
+
+- Test location identified as 'separate'
+- Files show tests/hooks/, tests/integration/ structure
+
+---
+id: everything-claude-code-try-catch-errors
+trigger: "When handling errors"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Try Catch Errors
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Error handling style identified as try-catch
+- No custom error classes or global handlers detected
+
+---
+id: everything-claude-code-version-release-workflow
+trigger: "When releasing a new version"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Version Release Workflow
+
+## Action
+
+Update package.json, plugin manifests, README.md, CHANGELOG.md, and create release documentation in docs/releases/
+
+## Evidence
+
+- Version-release workflow detected with ~2x/month frequency
+- Consistent pattern across package.json, .claude-plugin/, .opencode/ files
+
+---
+id: everything-claude-code-cross-platform-sync
+trigger: "When updating agents, commands, or skills"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Cross Platform Sync
+
+## Action
+
+Sync changes across .cursor/, .opencode/, .agents/, and .codex/ directories
+
+## Evidence
+
+- Cross-platform-harness-sync workflow shows ~3x/month frequency
+- Multiple platform directories: .cursor/, .opencode/, .agents/, .codex/
+
+---
+id: everything-claude-code-multi-language-docs
+trigger: "When updating documentation"
+confidence: 0.88
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Multi Language Docs
+
+## Action
+
+Update English first, then sync to docs/zh-CN/, docs/zh-TW/, and docs/ja-JP/ directories
+
+## Evidence
+
+- Multi-language documentation workflow ~4x/month
+- Consistent docs structure across EN, zh-CN, zh-TW, ja-JP
+
+---
+id: everything-claude-code-hook-enhancement
+trigger: "When adding or modifying hooks"
+confidence: 0.92
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Hook Enhancement
+
+## Action
+
+Update hooks/hooks.json, add scripts in scripts/hooks/, sync to .cursor/hooks/, and add tests
+
+## Evidence
+
+- Hook system enhancement workflow ~3x/month
+- Pattern shows hooks.json, scripts/hooks/, tests/hooks/ coordination
+
+---
+id: everything-claude-code-skill-addition
+trigger: "When adding new skills"
+confidence: 0.87
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Skill Addition
+
+## Action
+
+Create skill in skills/*/SKILL.md, update README.md, sync to platform directories, add metadata
+
+## Evidence
+
+- Skill addition workflow ~5x/month
+- Pattern shows skills/, .cursor/skills/, .agents/skills/ coordination
+
+---
+id: everything-claude-code-test-maintenance
+trigger: "When tests are failing"
+confidence: 0.83
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Test Maintenance
+
+## Action
+
+Fix tests in tests/ directory, update hook and integration tests, ensure all pass
+
+## Evidence
+
+- Test maintenance workflow ~4x/month
+- Pattern shows tests/, tests/hooks/, tests/integration/ structure
+
+---
+id: everything-claude-code-pr-number-reference
+trigger: "When merging pull requests"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Pr Number Reference
+
+## Action
+
+Include PR number in commit message format like (#327)
+
+## Evidence
+
+- Multiple commit examples show PR references: 'docs: add upstream tracking flag to push example (#327)'
+- Consistent (#XXX) pattern in merge commits
+
+---
+id: everything-claude-code-feature-scope
+trigger: "When adding features with specific scope"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Feature Scope
+
+## Action
+
+Use scope in commit format like 'feat(CLI):' or 'feat(agents):'
+
+## Evidence
+
+- Examples show 'feat(CLI): Add Antigravity IDE support'
+- 'feat(agents): add chief-of-staff communication triage agent (#280)'
+
+---
+id: everything-claude-code-refs-linking
+trigger: "When referencing issues in commits"
+confidence: 0.75
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/everything-claude-code
+---
+
+# Everything Claude Code Refs Linking
+
+## Action
+
+Use 'refs #XXX' format for issue references
+
+## Evidence
+
+- Example shows 'refactor(rules): split Feature Implementation Workflow from git-workflow.md (refs #235)'
+- Consistent refs pattern for issue linking
+
