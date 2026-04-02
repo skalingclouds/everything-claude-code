@@ -1,24 +1,22 @@
 ---
-name: feature-development
-description: Workflow command scaffold for feature-development in everything-claude-code.
+name: test-driven-development
+description: Workflow command scaffold for test-driven-development in everything-claude-code.
 allowed_tools: ["Bash", "Read", "Write", "Grep", "Glob"]
 ---
 
-# /feature-development
+# /test-driven-development
 
-Use this workflow when working on **feature-development** in `everything-claude-code`.
+Use this workflow when working on **test-driven-development** in `everything-claude-code`.
 
 ## Goal
 
-Standard feature implementation workflow
+Test-first development workflow (TDD)
 
 ## Common Files
 
-- `skills/remotion-video-creation/rules/assets/*`
-- `.opencode/*`
-- `.opencode/plugins/*`
 - `**/*.test.*`
-- `**/api/**`
+- `**/*.spec.*`
+- `src/**/*`
 
 ## Suggested Sequence
 
@@ -29,9 +27,9 @@ Standard feature implementation workflow
 
 ## Typical Commit Signals
 
-- Add feature implementation
-- Add tests for feature
-- Update documentation
+- Write failing test
+- Implement code to pass test
+- Refactor if needed
 
 ## Notes
 
