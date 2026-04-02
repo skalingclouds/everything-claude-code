@@ -14,8 +14,9 @@ Standard feature implementation workflow
 
 ## Common Files
 
-- `manifests/*`
-- `schemas/*`
+- `skills/remotion-video-creation/rules/assets/*`
+- `.opencode/*`
+- `.opencode/plugins/*`
 - `**/*.test.*`
 - `**/api/**`
 
